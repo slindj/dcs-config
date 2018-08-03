@@ -302,7 +302,8 @@ join(res.keyCommands,{
 	{down = iCommandPlaneNav_PB8,					name = _('IR Cooling control'),						category = _('Armament Control')},
 	
 	{down = iCommandPlaneJettisonFuelTanks,			name = _('Emergency Jettison Pushbutton'),			category = _('Armament Control')},
-	
+	{down = iCommandPlaneWingtipSmokeOnOff,         name = _('Smoke'),                                  category = _('Armament Control')},
+    
 	-- UFC
 	{down = iCommandPlaneUFC_1,						name = _('UFC 1 Button'),								category = _('Up Front Control')},
 	{down = iCommandPlaneUFC_2,						name = _('UFC 2/N Button'),								category = _('Up Front Control')},

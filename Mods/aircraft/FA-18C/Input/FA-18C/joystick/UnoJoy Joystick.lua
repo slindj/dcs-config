@@ -148,7 +148,7 @@ join(res.keyCommands,{
 {	down = SMS_commands.MasterArmSw_EXT,										cockpit_device_id = devices.SMS,	value_down =  1.0,					name = _('Master Arm Switch - ARM/SAFE'),	category = {_('Instrument Panel'), _('Master Arm Panel')}},
 {	down = SMS_commands.MasterArmSw,											cockpit_device_id = devices.SMS,	value_down =  1.0,					name = _('Master Arm Switch - ARM'),		category = {_('Instrument Panel'), _('Master Arm Panel')}},
 {	down = SMS_commands.MasterArmSw,											cockpit_device_id = devices.SMS,	value_down =  0.0,					name = _('Master Arm Switch - SAFE'),		category = {_('Instrument Panel'), _('Master Arm Panel')}},
-{	combo = {{key = 'JOY_BTN13'}}, down = SMS_commands.MasterArmSw,										cockpit_device_id = devices.SMS,	value_down =  1.0, value_up = 0.0,					name = _('Master Arm Switch'),	category = {_('Instrument Panel'), _('Master Arm Panel')}},
+{	combos = {{key = 'JOY_BTN13'}}, down = SMS_commands.MasterArmSw, up = SMS_commands.MasterArmSw,	cockpit_device_id = devices.SMS,	value_down =  1.0, value_up = 0.0,					name = _('Master Arm Switch'),	category = {_('Instrument Panel'), _('Master Arm Panel')}},
 -- jettison
 {	down = SMS_commands.EmerJettSw,			up = SMS_commands.EmerJettSw,			cockpit_device_id = devices.SMS,	value_down =  1.0,	value_up = 0.0,	name = _('Emergency Jettison Button'),					category = {_('Instrument Panel')}},
 {	down = SMS_commands.JettStationLOBtn_ITER,										cockpit_device_id = devices.SMS,	value_down =  0.0,					name = _('Station Jettison Select Button LEFT OUT - ON/OFF'),	category = {_('Instrument Panel')}},

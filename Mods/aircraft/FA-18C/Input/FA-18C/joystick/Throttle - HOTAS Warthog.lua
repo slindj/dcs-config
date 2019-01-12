@@ -454,7 +454,7 @@ join(res.keyCommands,{
 {	down = SMS_commands.SelJettBtn,				up = SMS_commands.SelJettBtn,			cockpit_device_id = devices.SMS,				value_down =  1.0,	value_up = 0.0,	name = _('Selective Jettison Pushbutton'),									category = {_('Left Vertical Panel')}},
 --
 {	down = gear_commands.LaunchBarSw,			up = gear_commands.LaunchBarSw,			cockpit_device_id = devices.GEAR_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('Launch Bar Control Switch - EXTEND/RETRACT'),						category = {_('Left Vertical Panel')}},
-{	combos = {{key = 'JOY_BTN24'}}, down = gear_commands.LaunchBarSw, up = gear_commands.LaunchBarSw, cockpit_device_id = devices.GEAR_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('Launch Bar Control Switch - EXTEND/RETRACT'),		category = {_('Left Vertical Panel')}},
+{	combos = {{key = 'JOY_BTN24'}}, down = gear_commands.LaunchBarSw, up = gear_commands.LaunchBarSw, cockpit_device_id = devices.GEAR_INTERFACE,		value_down =  -1.0,	value_up = 1.0,	name = _('Launch Bar Control Switch - EXTEND/RETRACT'),		category = {_('Left Vertical Panel')}},
 
 --
 

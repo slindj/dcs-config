@@ -281,6 +281,7 @@ join(res.keyCommands,{
 {	pressed = HUD_commands.HUD_AoA_IndexerCtrl_ITER,		cockpit_device_id = devices.HUD,	value_pressed = -0.5,	name = _('AOA Indexer Control Knob - CCW/Decrease'),				category = {_('Instrument Panel'), _('HUD Control Panel')}},
 {	pressed = HUD_commands.HUD_AoA_IndexerCtrl_ITER,		cockpit_device_id = devices.HUD,	value_pressed =  0.5,	name = _('AOA Indexer Control Knob - CW/Increase'),					category = {_('Instrument Panel'), _('HUD Control Panel')}},
 {	down = HUD_commands.HUD_AltitudeSw_ITER,				cockpit_device_id = devices.HUD,	value_down =  0.0,		name = _('Altitude Switch - BARO/RDR'),								category = {_('Instrument Panel'), _('HUD Control Panel')}},
+{	combos = {{key = 'JOY_BTN25'}}, down = HUD_commands.HUD_AltitudeSw, up = HUD_commands.HUD_AltitudeSw,				cockpit_device_id = devices.HUD,	value_down =  1.0,	value_up = 0.0,	name = _('Altitude Switch - BARO/RDR'),								category = {_('Instrument Panel'), _('HUD Control Panel')}},
 {	down = HUD_commands.HUD_AltitudeSw,						cockpit_device_id = devices.HUD,	value_down =  1.0,		name = _('Altitude Switch - BARO'),									category = {_('Instrument Panel'), _('HUD Control Panel')}},
 {	down = HUD_commands.HUD_AltitudeSw,						cockpit_device_id = devices.HUD,	value_down =  0.0,		name = _('Altitude Switch - RDR'),									category = {_('Instrument Panel'), _('HUD Control Panel')}},
 {	down = HUD_commands.HUD_AttitudeSelSw_ITER,				cockpit_device_id = devices.HUD,	value_down =  1.0,		name = _('Attitude Selector Switch - Up'),							category = {_('Instrument Panel'), _('HUD Control Panel')}},
@@ -453,7 +454,10 @@ join(res.keyCommands,{
 {	down = SMS_commands.SelJettBtn,				up = SMS_commands.SelJettBtn,			cockpit_device_id = devices.SMS,				value_down =  1.0,	value_up = 0.0,	name = _('Selective Jettison Pushbutton'),									category = {_('Left Vertical Panel')}},
 --
 {	down = gear_commands.LaunchBarSw,			up = gear_commands.LaunchBarSw,			cockpit_device_id = devices.GEAR_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('Launch Bar Control Switch - EXTEND/RETRACT'),						category = {_('Left Vertical Panel')}},
+{	combos = {{key = 'JOY_BTN24'}}, down = gear_commands.LaunchBarSw, up = gear_commands.LaunchBarSw, cockpit_device_id = devices.GEAR_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('Launch Bar Control Switch - EXTEND/RETRACT'),		category = {_('Left Vertical Panel')}},
+
 --
+
 {	down = cptlights_commands.HookBypass,		up = cptlights_commands.HookBypass,		cockpit_device_id = devices.CPT_LIGTHS,			value_down =  1.0,	value_up = 0.0,	name = _('HOOK BYPASS Switch - FIELD/CARRIER'),								category = {_('Left Vertical Panel')}},
 --
 {	down = extlights_commands.LdgTaxi_EXT,												cockpit_device_id = devices.EXT_LIGHTS,			value_down =  0.0,					name = _('LDG/TAXI LIGHT Switch - ON/OFF'),									category = {_('Left Vertical Panel')}},
